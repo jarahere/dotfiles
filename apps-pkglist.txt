@@ -2,7 +2,6 @@ code
 discord
 firefox
 spotify-launcher
-betterbird
 virtualbox
 obs-studio
 bitwarden
