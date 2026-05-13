@@ -12,6 +12,11 @@ get_venv() {
     fi
 }
 
+# Function to get git branch
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 # Disable built-in prefix (python venv)
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
@@ -28,5 +33,5 @@ alias grep='grep --color=auto'
 # PS1="\[\033[0;36m\]\W \[\033[0;36m\]> \[\033[0m\]"
 # PS1="\[\033[0;36m\]\W\[\033[0;36m\]\$(get_venv) > \[\033[0m\]"
 
-# Arch blue:
-PS1="\[\033[0;36m\]\W\$(get_venv) > \[\033[0m\]"
+# Main prompt:
+PS1="\n\[\033[0;36m\]\W\$(get_venv)\$(parse_git_branch) > \[\033[0m\]"
