@@ -38,7 +38,7 @@ window#waybar {
     padding: 0px 12px;
 }
 
-#cpu, #memory, #temperature {
+#cpu, #memory {
     padding: 0px 12px;
 }
 

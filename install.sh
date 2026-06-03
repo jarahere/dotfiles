@@ -42,4 +42,4 @@ echo "Configuring sudoers for impala..."
 echo "$USER ALL=(ALL) NOPASSWD: /usr/bin/impala" | sudo tee /etc/sudoers.d/impala
 sudo chmod 440 /etc/sudoers.d/impala
 
-echo "Done."
+echo "Done. Reboot now."
