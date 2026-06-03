@@ -1,0 +1,15 @@
+------------------
+---- SOURCING ----
+------------------
+
+require("modules.monitors")
+require("modules.autostart")
+require("modules.env")
+require("modules.permissions")
+require("modules.decorations")
+require("modules.animations")
+require("modules.windowrules")
+require("modules.binds")
+require("modules.layout")
+require("modules.misc")
+require("modules.input")
